@@ -8,11 +8,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: volta-cli/action@v1
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
       - run: pnpm install --frozen-lockfile
       - run: pnpm lint
       - run: pnpm test
       - run: pnpm build
         env:
           CI: true
-          VOLTA_FEATURE_PNPM: 1
+

@@ -18,7 +18,6 @@
 - [Prettier][prettier] to enforce consistent code style
 - NPM [scripts](#available-scripts) for common operations
 - [EditorConfig][editorconfig] for consistent coding style
-- Reproducible environments thanks to [Volta][volta]
 - Example configuration for [GitHub Actions][gh-actions]
 - Simple example of TypeScript code and unit test
 
@@ -37,22 +36,14 @@ To start, just click the **[Use template][repo-template-action]** link (or the g
 To clone the repository, use the following commands:
 
 ```sh
-git clone https://github.com/jsynowiec/node-typescript-boilerplate
+git clone https://github.com/dest1n1s/node-typescript-boilerplate
 cd node-typescript-boilerplate
 npm install
 ```
 
-### Download latest release
-
-Download and unzip the current **main** branch or one of the tags:
-
-```sh
-wget https://github.com/jsynowiec/node-typescript-boilerplate/archive/main.zip -O node-typescript-boilerplate.zip
-unzip node-typescript-boilerplate.zip && rm node-typescript-boilerplate.zip
-```
-
 ## Available Scripts
 
+- `start` - transpile TypeScript to ES6, start watch mode and run index.js using [nodemon](https://nodemon.io/),
 - `clean` - remove coverage data, Jest cache and transpiled files,
 - `prebuild` - lint source files and tests before building,
 - `build` - transpile TypeScript to ES6,
@@ -63,12 +54,6 @@ unzip node-typescript-boilerplate.zip && rm node-typescript-boilerplate.zip
 - `test:watch` - interactive watch mode to automatically re-run tests
 
 ## Additional Information
-
-### Why include Volta
-
-[Volta][volta]’s toolchain always keeps track of where you are, it makes sure the tools you use always respect the settings of the project you’re working on. This means you don’t have to worry about changing the state of your installed software when switching between projects. For example, it's [used by engineers at LinkedIn][volta-tomdale] to standardize tools and have reproducible development environments.
-
-I recommend to [install][volta-getting-started] Volta and use it to manage your project's toolchain.
 
 ### ES Modules
 
@@ -101,9 +86,6 @@ Licensed under the APLv2. See the [LICENSE](https://github.com/jsynowiec/node-ty
 [eslint]: https://github.com/eslint/eslint
 [wiki-js-tests]: https://github.com/jsynowiec/node-typescript-boilerplate/wiki/Unit-tests-in-plain-JavaScript
 [prettier]: https://prettier.io
-[volta]: https://volta.sh
-[volta-getting-started]: https://docs.volta.sh/guide/getting-started
-[volta-tomdale]: https://twitter.com/tomdale/status/1162017336699838467?s=20
 [gh-actions]: https://github.com/features/actions
 [repo-template-action]: https://github.com/jsynowiec/node-typescript-boilerplate/generate
 [esm]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
