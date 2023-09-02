@@ -38,7 +38,7 @@ To clone the repository, use the following commands:
 ```sh
 git clone https://github.com/dest1n1s/node-typescript-boilerplate
 cd node-typescript-boilerplate
-npm install
+pnpm install
 ```
 
 ## Available Scripts
