@@ -36,13 +36,9 @@
     "prettier": "prettier --config .prettierrc --write .",
     "test:watch": "jest --watch"
   },
-  "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
+  "author": "Dest1n1 <dest1nis2022@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
     "tslib": "~2.6"
-  },
-  "volta": {
-    "node": "18.12.1",
-    "pnpm": "8.7.1"
   }
 }
