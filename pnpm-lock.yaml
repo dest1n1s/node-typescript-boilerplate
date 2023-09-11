@@ -51,7 +51,7 @@ devDependencies:
     version: registry.npmmirror.com/rimraf@5.0.0
   ts-api-utils:
     specifier: ~1.0
-    version: registry.npmmirror.com/ts-api-utils@1.0.0(typescript@5.2.2)
+    version: 1.0.3(typescript@5.2.2)
   ts-jest:
     specifier: ~29.1
     version: registry.npmmirror.com/ts-jest@29.1.0(@babel/core@7.22.11)(jest@29.6.4)(typescript@5.2.2)
@@ -2740,6 +2740,15 @@ packages:
       is-number: 7.0.0
     dev: true
 
+  /ts-api-utils@1.0.3(typescript@5.2.2):
+    resolution: {integrity: sha512-wNMeqtMz5NtwpT/UZGY5alT+VoKdSsOOP/kqHFcUW1P/VRhH2wJ48+DN2WwUliNbQ976ETwDL0Ifd2VVvgonvg==}
+    engines: {node: '>=16.13.0'}
+    peerDependencies:
+      typescript: '>=4.2.0'
+    dependencies:
+      typescript: 5.2.2
+    dev: true
+
   /tslib@1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
@@ -2970,7 +2979,7 @@ packages:
       natural-compare: registry.npmmirror.com/natural-compare@1.4.0
       natural-compare-lite: registry.npmmirror.com/natural-compare-lite@1.4.0
       semver: registry.npmmirror.com/semver@7.5.4
-      ts-api-utils: registry.npmmirror.com/ts-api-utils@1.0.2(typescript@5.2.2)
+      ts-api-utils: 1.0.3(typescript@5.2.2)
       typescript: 5.2.2
     transitivePeerDependencies:
       - supports-color
@@ -3037,7 +3046,7 @@ packages:
       '@typescript-eslint/utils': registry.npmmirror.com/@typescript-eslint/utils@6.2.0(eslint@8.48.0)(typescript@5.2.2)
       debug: 4.3.4
       eslint: 8.48.0
-      ts-api-utils: registry.npmmirror.com/ts-api-utils@1.0.2(typescript@5.2.2)
+      ts-api-utils: 1.0.3(typescript@5.2.2)
       typescript: 5.2.2
     transitivePeerDependencies:
       - supports-color
@@ -3099,7 +3108,7 @@ packages:
       globby: registry.npmmirror.com/globby@11.1.0
       is-glob: 4.0.3
       semver: 7.5.4
-      ts-api-utils: registry.npmmirror.com/ts-api-utils@1.0.2(typescript@5.2.2)
+      ts-api-utils: 1.0.3(typescript@5.2.2)
       typescript: 5.2.2
     transitivePeerDependencies:
       - supports-color
@@ -3826,30 +3835,6 @@ packages:
     name: tree-kill
     version: 1.2.2
     hasBin: true
-    dev: true
-
-  registry.npmmirror.com/ts-api-utils@1.0.0(typescript@5.2.2):
-    resolution: {integrity: sha512-ycbj7cbgdeLc5i7xhxewYjWOoMzeVz4PiKvkWC/fVjfbt4ToHCvotIzD+GB1iYn1R+kaQG0JdET1ZNZwl4nXUQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/ts-api-utils/-/ts-api-utils-1.0.0.tgz}
-    id: registry.npmmirror.com/ts-api-utils/1.0.0
-    name: ts-api-utils
-    version: 1.0.0
-    engines: {node: '>=16.13.0'}
-    peerDependencies:
-      typescript: '>=4.2.0'
-    dependencies:
-      typescript: 5.2.2
-    dev: true
-
-  registry.npmmirror.com/ts-api-utils@1.0.2(typescript@5.2.2):
-    resolution: {integrity: sha512-Cbu4nIqnEdd+THNEsBdkolnOXhg0I8XteoHaEKgvsxpsbWda4IsUut2c187HxywQCvveojow0Dgw/amxtSKVkQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/ts-api-utils/-/ts-api-utils-1.0.2.tgz}
-    id: registry.npmmirror.com/ts-api-utils/1.0.2
-    name: ts-api-utils
-    version: 1.0.2
-    engines: {node: '>=16.13.0'}
-    peerDependencies:
-      typescript: '>=4.2.0'
-    dependencies:
-      typescript: 5.2.2
     dev: true
 
   registry.npmmirror.com/ts-jest@29.1.0(@babel/core@7.22.11)(jest@29.6.4)(typescript@5.2.2):
