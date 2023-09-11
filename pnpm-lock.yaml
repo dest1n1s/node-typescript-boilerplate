@@ -48,7 +48,7 @@ devDependencies:
     version: 3.0.3
   rimraf:
     specifier: ~5.0
-    version: registry.npmmirror.com/rimraf@5.0.0
+    version: 5.0.1
   ts-api-utils:
     specifier: ~1.0
     version: registry.npmmirror.com/ts-api-utils@1.0.0(typescript@5.2.2)
@@ -458,6 +458,18 @@ packages:
 
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@isaacs/cliui@8.0.2:
+    resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
+    engines: {node: '>=12'}
+    dependencies:
+      string-width: 5.1.2
+      string-width-cjs: /string-width@4.2.3
+      strip-ansi: 7.1.0
+      strip-ansi-cjs: /strip-ansi@6.0.1
+      wrap-ansi: 8.1.0
+      wrap-ansi-cjs: /wrap-ansi@7.0.0
     dev: true
 
   /@istanbuljs/load-nyc-config@1.1.0:
@@ -1196,6 +1208,10 @@ packages:
       esutils: 2.0.3
     dev: true
 
+  /eastasianwidth@0.2.0:
+    resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
+    dev: true
+
   /electron-to-chromium@1.4.508:
     resolution: {integrity: sha512-FFa8QKjQK/A5QuFr2167myhMesGrhlOBD+3cYNxO9/S4XzHEXesyTD/1/xF644gC8buFPz3ca6G1LOQD0tZrrg==}
     dev: true
@@ -1463,6 +1479,14 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
+  /foreground-child@3.1.1:
+    resolution: {integrity: sha512-TMKDUnIte6bfb5nWv7V/caI169OHgvwjb7V4WkeUvbQQdjr5rWKqHFiKWb/fcOwB+CzBT+qbWjvj+DVwRskpIg==}
+    engines: {node: '>=14'}
+    dependencies:
+      cross-spawn: 7.0.3
+      signal-exit: 4.1.0
+    dev: true
+
   /fs.realpath@1.0.0:
     resolution: {integrity: sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw==}
     dev: true
@@ -1511,6 +1535,18 @@ packages:
     engines: {node: '>=10.13.0'}
     dependencies:
       is-glob: 4.0.3
+    dev: true
+
+  /glob@10.3.4:
+    resolution: {integrity: sha512-6LFElP3A+i/Q8XQKEvZjkEWEOTgAIALR9AO2rwT8bgPhDd1anmqDJDZ6lLddI4ehxxxR1S5RIqKe1uapMQfYaQ==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    hasBin: true
+    dependencies:
+      foreground-child: 3.1.1
+      jackspeak: 2.3.1
+      minimatch: 9.0.3
+      minipass: 7.0.3
+      path-scurry: 1.10.1
     dev: true
 
   /glob@7.2.3:
@@ -1726,6 +1762,15 @@ packages:
     dependencies:
       html-escaper: 2.0.2
       istanbul-lib-report: 3.0.1
+    dev: true
+
+  /jackspeak@2.3.1:
+    resolution: {integrity: sha512-4iSY3Bh1Htv+kLhiiZunUhQ+OYXIn0ze3ulq8JeWrFKmhPAJSySV2+kdtRh2pGcCeF0s6oR8Oc+pYZynJj4t8A==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@isaacs/cliui': 8.0.2
+    optionalDependencies:
+      '@pkgjs/parseargs': 0.11.0
     dev: true
 
   /jest-changed-files@29.6.3:
@@ -2298,6 +2343,11 @@ packages:
       brace-expansion: 2.0.1
     dev: true
 
+  /minipass@7.0.3:
+    resolution: {integrity: sha512-LhbbwCfz3vsb12j/WkWQPZfKTsgqIe1Nf/ti1pKjYESGLHIVjWU96G9/ljLH4F9mWNVhlQOm0VySdAWzf05dpg==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dev: true
+
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: true
@@ -2439,6 +2489,14 @@ packages:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
     dev: true
 
+  /path-scurry@1.10.1:
+    resolution: {integrity: sha512-MkhCqzzBEpPvxxQ71Md0b1Kk51W01lrYvlMzSUaIzNsODdd7mqhiimSZlr+VegAz5Z6Vzt9Xg2ttE//XBhH3EQ==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dependencies:
+      lru-cache: 10.0.1
+      minipass: 7.0.3
+    dev: true
+
   /picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: true
@@ -2553,6 +2611,14 @@ packages:
       glob: 7.2.3
     dev: true
 
+  /rimraf@5.0.1:
+    resolution: {integrity: sha512-OfFZdwtd3lZ+XZzYP/6gTACubwFcHdLRqS9UX3UwpU2dnGQYkPFISRwvM3w9IiB2w7bW5qGo/uAwE4SmXXSKvg==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      glob: 10.3.4
+    dev: true
+
   /run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
     dependencies:
@@ -2646,7 +2712,7 @@ packages:
     resolution: {integrity: sha512-HnLOCR3vjcY8beoNLtcjZ5/nxn2afmME6lhrDrebokqMap+XbeW8n9TXpPDOqdGK5qcI3oT0GKTW6wC7EMiVqA==}
     engines: {node: '>=12'}
     dependencies:
-      eastasianwidth: registry.npmmirror.com/eastasianwidth@0.2.0
+      eastasianwidth: 0.2.0
       emoji-regex: 9.2.2
       strip-ansi: 7.1.0
     dev: true
@@ -2895,20 +2961,6 @@ packages:
     name: '@eslint-community/regexpp'
     version: 4.8.0
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
-    dev: true
-
-  registry.npmmirror.com/@isaacs/cliui@8.0.2:
-    resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/@isaacs/cliui/-/cliui-8.0.2.tgz}
-    name: '@isaacs/cliui'
-    version: 8.0.2
-    engines: {node: '>=12'}
-    dependencies:
-      string-width: 5.1.2
-      string-width-cjs: /string-width@4.2.3
-      strip-ansi: 7.1.0
-      strip-ansi-cjs: /strip-ansi@6.0.1
-      wrap-ansi: 8.1.0
-      wrap-ansi-cjs: /wrap-ansi@7.0.0
     dev: true
 
   registry.npmmirror.com/@pkgr/utils@2.4.2:
@@ -3345,12 +3397,6 @@ packages:
       path-type: registry.npmmirror.com/path-type@4.0.0
     dev: true
 
-  registry.npmmirror.com/eastasianwidth@0.2.0:
-    resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/eastasianwidth/-/eastasianwidth-0.2.0.tgz}
-    name: eastasianwidth
-    version: 0.2.0
-    dev: true
-
   registry.npmmirror.com/eslint-config-prettier@9.0.0(eslint@8.48.0):
     resolution: {integrity: sha512-IcJsTkJae2S35pRsRAwoCE+925rJJStOdkKnLVgtE+tEpqU0EVVM7OqrwxqgptKdX29NUwC82I5pXsGFIgSevw==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/eslint-config-prettier/-/eslint-config-prettier-9.0.0.tgz}
     id: registry.npmmirror.com/eslint-config-prettier/9.0.0
@@ -3437,30 +3483,6 @@ packages:
     version: 2.1.0
     dev: true
 
-  registry.npmmirror.com/foreground-child@3.1.1:
-    resolution: {integrity: sha512-TMKDUnIte6bfb5nWv7V/caI169OHgvwjb7V4WkeUvbQQdjr5rWKqHFiKWb/fcOwB+CzBT+qbWjvj+DVwRskpIg==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/foreground-child/-/foreground-child-3.1.1.tgz}
-    name: foreground-child
-    version: 3.1.1
-    engines: {node: '>=14'}
-    dependencies:
-      cross-spawn: 7.0.3
-      signal-exit: 4.1.0
-    dev: true
-
-  registry.npmmirror.com/glob@10.3.4:
-    resolution: {integrity: sha512-6LFElP3A+i/Q8XQKEvZjkEWEOTgAIALR9AO2rwT8bgPhDd1anmqDJDZ6lLddI4ehxxxR1S5RIqKe1uapMQfYaQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/glob/-/glob-10.3.4.tgz}
-    name: glob
-    version: 10.3.4
-    engines: {node: '>=16 || 14 >=14.17'}
-    hasBin: true
-    dependencies:
-      foreground-child: registry.npmmirror.com/foreground-child@3.1.1
-      jackspeak: registry.npmmirror.com/jackspeak@2.3.1
-      minimatch: 9.0.3
-      minipass: registry.npmmirror.com/minipass@7.0.3
-      path-scurry: registry.npmmirror.com/path-scurry@1.10.1
-    dev: true
-
   registry.npmmirror.com/globby@11.1.0:
     resolution: {integrity: sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/globby/-/globby-11.1.0.tgz}
     name: globby
@@ -3538,17 +3560,6 @@ packages:
       is-docker: registry.npmmirror.com/is-docker@2.2.1
     dev: true
 
-  registry.npmmirror.com/jackspeak@2.3.1:
-    resolution: {integrity: sha512-4iSY3Bh1Htv+kLhiiZunUhQ+OYXIn0ze3ulq8JeWrFKmhPAJSySV2+kdtRh2pGcCeF0s6oR8Oc+pYZynJj4t8A==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/jackspeak/-/jackspeak-2.3.1.tgz}
-    name: jackspeak
-    version: 2.3.1
-    engines: {node: '>=14'}
-    dependencies:
-      '@isaacs/cliui': registry.npmmirror.com/@isaacs/cliui@8.0.2
-    optionalDependencies:
-      '@pkgjs/parseargs': 0.11.0
-    dev: true
-
   registry.npmmirror.com/jest-util@29.6.3:
     resolution: {integrity: sha512-QUjna/xSy4B32fzcKTSz1w7YYzgiHrjjJjevdRf61HYk998R5vVMMNmrHESYZVDS5DSWs+1srPLPKxXPkeSDOA==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/jest-util/-/jest-util-29.6.3.tgz}
     name: jest-util
@@ -3583,15 +3594,6 @@ packages:
     version: 4.17.21
     dev: true
 
-  registry.npmmirror.com/lru-cache@6.0.0:
-    resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/lru-cache/-/lru-cache-6.0.0.tgz}
-    name: lru-cache
-    version: 6.0.0
-    engines: {node: '>=10'}
-    dependencies:
-      yallist: 4.0.0
-    dev: true
-
   registry.npmmirror.com/make-error@1.3.6:
     resolution: {integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/make-error/-/make-error-1.3.6.tgz}
     name: make-error
@@ -3611,13 +3613,6 @@ packages:
     version: 3.1.2
     dependencies:
       brace-expansion: 1.1.11
-    dev: true
-
-  registry.npmmirror.com/minipass@7.0.3:
-    resolution: {integrity: sha512-LhbbwCfz3vsb12j/WkWQPZfKTsgqIe1Nf/ti1pKjYESGLHIVjWU96G9/ljLH4F9mWNVhlQOm0VySdAWzf05dpg==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/minipass/-/minipass-7.0.3.tgz}
-    name: minipass
-    version: 7.0.3
-    engines: {node: '>=16 || 14 >=14.17'}
     dev: true
 
   registry.npmmirror.com/natural-compare-lite@1.4.0:
@@ -3672,16 +3667,6 @@ packages:
       is-wsl: registry.npmmirror.com/is-wsl@2.2.0
     dev: true
 
-  registry.npmmirror.com/path-scurry@1.10.1:
-    resolution: {integrity: sha512-MkhCqzzBEpPvxxQ71Md0b1Kk51W01lrYvlMzSUaIzNsODdd7mqhiimSZlr+VegAz5Z6Vzt9Xg2ttE//XBhH3EQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/path-scurry/-/path-scurry-1.10.1.tgz}
-    name: path-scurry
-    version: 1.10.1
-    engines: {node: '>=16 || 14 >=14.17'}
-    dependencies:
-      lru-cache: 10.0.1
-      minipass: registry.npmmirror.com/minipass@7.0.3
-    dev: true
-
   registry.npmmirror.com/path-type@4.0.0:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/path-type/-/path-type-4.0.0.tgz}
     name: path-type
@@ -3719,16 +3704,6 @@ packages:
     version: 0.14.0
     dev: true
 
-  registry.npmmirror.com/rimraf@5.0.0:
-    resolution: {integrity: sha512-Jf9llaP+RvaEVS5nPShYFhtXIrb3LRKP281ib3So0KkeZKo2wIKyq0Re7TOSwanasA423PSr6CCIL4bP6T040g==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/rimraf/-/rimraf-5.0.0.tgz}
-    name: rimraf
-    version: 5.0.0
-    engines: {node: '>=14'}
-    hasBin: true
-    dependencies:
-      glob: registry.npmmirror.com/glob@10.3.4
-    dev: true
-
   registry.npmmirror.com/run-applescript@5.0.0:
     resolution: {integrity: sha512-XcT5rBksx1QdIhlFOCtgZkB99ZEouFZ1E2Kc2LHqNW13U3/74YGdkQRmThTwxy4QIyookibDKYZOPqX//6BlAg==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/run-applescript/-/run-applescript-5.0.0.tgz}
     name: run-applescript
@@ -3753,7 +3728,7 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      lru-cache: registry.npmmirror.com/lru-cache@6.0.0
+      lru-cache: 6.0.0
     dev: true
 
   registry.npmmirror.com/shell-quote@1.8.1:
